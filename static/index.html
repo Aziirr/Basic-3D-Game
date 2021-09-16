@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/scripts/GenerateBoard.js"></script>
+    <script src="/scripts/UI.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            board = new GenerateBoard();
+            ui = new UI();
+        });
+    </script>
+</head>
+
+<body>
+<div id="main">
+    <div id="level_select_div">
+        <select id="level_select"></select>
+        <button id="level_submit"> WYBIERZ</button>
+    </div>
+    <div id="left">
+        <select name="level" id="level">
+        </select>
+        <button id="level_save" class="left_button">ZAPISZ LEVEL NA SERWERZE</button>
+        <button id="level_load" class="left_button">WCZYTAJ LEVEL Z SERWERA</button>
+        <button id="btn_hex" class="left_button" style="color:red;">GO TO HEX!</button>
+        <button id="btn_3d" class="left_button" style="color:blue;">GO TO GAME</button>
+        <button id="btn_movement" class="left_button" style="color:red;">SIMPLE PLAYER MOVEMENT</button>
+        <button id="btn_ally" class="left_button" style="color:red;">SIMPLE ALLY MOVEMENT</button>
+        <button id="btn_wall" class="left_button">WALLS</button>
+        <button id="btn_enemy" class="left_button">ENEMY</button>
+        <button id="btn_treasure" class="left_button">TREASURE</button>
+        <button id="btn_light" class="left_button">LIGHT</button>
+    </div>
+    <div id="changes"></div>
+    <div id="right"></div>
+</div>
+</body>
+
+</html>

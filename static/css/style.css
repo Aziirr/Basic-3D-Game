@@ -1,0 +1,137 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+#left {
+    width: 10%;
+    height: 100%;
+    background-color: lightslategray;
+}
+
+#changes {
+    width: 15%;
+    height: 100%;
+    overflow: auto;
+    background-color: aliceblue;
+    overflow-wrap: break-word;
+}
+
+#right {
+    width: 75%;
+    height: 100%;
+    position: relative;
+}
+
+#level {
+    width: 100%;
+    margin: 10px auto;
+    height: 4em;
+    font-size: 1.2em;
+}
+
+.left_button {
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.hexagon {
+    width: 116px;
+    height: 100px;
+    background-image: url("/images/hexagon_blue.png");
+    background-size: contain;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arrow_div {
+    background-image: url("/images/arrow.svg");
+    background-size: 35%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 116px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    user-select: none;
+}
+
+.rotate_0 {
+    transform: rotate(0deg);
+}
+
+.rotate_1 {
+    transform: rotate(60deg);
+}
+
+.rotate_2 {
+    transform: rotate(120deg);
+}
+
+.rotate_3 {
+    transform: rotate(180deg);
+}
+
+.rotate_4 {
+    transform: rotate(240deg);
+}
+
+.rotate_5 {
+    transform: rotate(300deg);
+}
+
+#level_select_div {
+    left: 0;
+    right: 0;
+    display: none;
+    position: absolute;
+    width: 20vw;
+    height: 10vh;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+#level_select, #level_submit {
+    width: 20vw;
+    height: 10vh;
+    font-size: 1.2em;
+}
+
+#buttons {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    left: 0;
+    top: 0;
+    color: whitesmoke;
+}
+
+#buttons > input {
+    margin-right: 5px;
+    margin-top:2px
+}
+#cancel{
+    position:relative;
+    width: 20vw;
+    height: 10vh;
+    background-color: red;
+    color:white;
+    text-align: center;
+    font-size: 1.2em;
+}
+#left > *{
+    font-weight: bold;
+    margin: 5px 0
+}
